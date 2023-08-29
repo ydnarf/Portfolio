@@ -16,7 +16,7 @@
     <!-- Iconos de Bootstrap-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <!-- CSS-->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/scss/styles.css">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,8 +29,8 @@
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbar-toggler" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbar-toggler">
-            <a class="navbar-brand" href="#"><img src="imagenes/laptop_logo.png" alt="Logo de la pagina web" width="50"></a>
+          <div class="collapse navbar-collapse navbar__navegar" id="navbar-toggler">
+            <a class="navbar-brand" href="index.html"><img src="imagenes/laptop_logo.png" alt="Logo de la pagina web" width="50"></a>
             <ul class="navbar-nav d-flex justify-content-center align-items-center">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#sobre-mi">Sobre mí</a>
@@ -51,21 +51,21 @@
 
     <!-- Seccion Hero -->
     <section class="hero aling-items-stretch">
-      <div class="hero-principal">
-        <img class="hero-imagen-perfil" src="imagenes/Foto_2x2.png" alt="Foto de Frandy">
+      <div class="hero__principal">
+        <img class="hero__img-perfil" src="imagenes/Foto_2x2.png" alt="Foto de Frandy">
         <h1>Hola, Soy Frandy</h1>
-        <h2>Desarrollor Web Front End</h2>
+        <h2 class="hero__header2">Desarrollor Web Front End</h2>
       </div>
-      <div class="hero-inferior">
-        <img class="hero-inferior-imagen img-fluid" src="https://via.placeholder.com/600x400" alt="Imagen de desarrollador">
+      <div class="hero__inferior">
+        <img class="hero__img-inferior img-fluid" src="https://via.placeholder.com/600x400" alt="Imagen de desarrollador">
       </div>
     </section>
 
     <!-- Sobre mi -->
-    <section id="sobre-mi" class="sobre-mi seccion-oscura">
-      <div class="contenedor">
-        <h2 class="seccion-titulo">Conoce a Frandy</h2>
-        <p class="seccion-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi numquam dolores nihil doloribus nobis laborum ea deserunt nisi rem! Officiis quod laboriosam impedit magni quas eius labore possimus ea vero.</p>
+    <section id="sobre-mi" class="sobre-mi">
+      <div class="sobre-mi__contenedor">
+        <h2 class="sobre-mi__seccion-titulo">Conoce a Frandy</h2>
+        <p class="sobre-mi__seccion-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi numquam dolores nihil doloribus nobis laborum ea deserunt nisi rem! Officiis quod laboriosam impedit magni quas eius labore possimus ea vero.</p>
       </div>
     </section>
 
@@ -74,26 +74,26 @@
       <div class="container text-center">
         <div class="row">
           <!-- Desarrollo web -->
-          <div class="columna col-12 col-md-6">
-            <i class="bi bi-laptop"></i>
-            <p class="experiencia-titulo">Desarrollo Web</p>
+          <div class="experiencia__columna col-12 col-md-6">
+            <i class="bi bi-laptop experiencia__icono"></i>
+            <p class="experiencia__titulo">Desarrollo Web</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam praesentium delectus quo voluptatum alias nobis quae facere animi ipsa, vel porro, ipsum quisquam excepturi iure! Corporis magni eius sint accusantium.</p>
-            <div class="badges-contenedor">
-              <span class="badge text-bg-primary">HTML</span>
-              <span class="badge text-bg-primary">CSS</span>
-              <span class="badge text-bg-primary">JavaScript</span>
-              <span class="badge text-bg-primary">Git</span>
-              <span class="badge text-bg-primary">Bootstrap</span>
+            <div class="badges-contenedor experiencia__insignias-contenedor">
+              <span class="experiencia__insignia badge text-bg-primary">HTML</span>
+              <span class="experiencia__insignia badge text-bg-primary">CSS</span>
+              <span class="experiencia__insignia badge text-bg-primary">JavaScript</span>
+              <span class="experiencia__insignia badge text-bg-primary">Git</span>
+              <span class="experiencia__insignia badge text-bg-primary">Bootstrap</span>
             </div>
           </div>
           <!-- Estudiante -->
-          <div class="columna col-12 col-md-6">
-            <i class="bi bi-laptop"></i>
-            <p class="experiencia-titulo">Estudiante</p>
+          <div class="experiencia__columna col-12 col-md-6">
+            <i class="bi bi-laptop experiencia__icono"></i>
+            <p class="experiencia__titulo">Estudiante</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam praesentium delectus quo voluptatum alias nobis quae facere animi ipsa, vel porro, ipsum quisquam excepturi iure! Corporis magni eius sint accusantium.</p>
-            <div class="badges-contenedor">
-              <span class="badge text-bg-primary">Udemy</span>
-              <span class="badge text-bg-primary">freeCodeCamp</span>
+            <div class="badges-contenedor experiencia__insignias-contenedor">
+              <span class="experiencia__insignia badge text-bg-primary">Udemy</span>
+              <span class="experiencia__insignia badge text-bg-primary">freeCodeCamp</span>
             </div>
           </div>
         </div>
@@ -102,23 +102,24 @@
 
     <!-- Proyectos -->
     <section id="proyectos" class="proyectos-recientes seccion-clara d-flex flex-column">
-      <h2 class="seccion-titulo texto-negro">Mis proyectos recientes</h2>
-      <h3 class="seccion-descripcion">Estos son algunos proyectos que he creado.</h3>
+      <h2 class="proyectos-recientes__seccion-titulo texto-negro">Mis proyectos recientes</h2>
+      <h3 class="proyectos-recientes__seccion-descripcion">Estos son algunos proyectos que he creado.</h3>
+      
       <!-- Galeria de Proyectos -->
-      <div class="container text-center proyectos-contenedor">
+      <div class="container text-center proyectos-recientes__contenedor">
         <div class="row">
           <!-- Proyecto 1 -->
           <div class="col-12 col-md-6 col-lg-4">
-            <div class="proyecto">
-              <img src="https://via.placeholder.com/600x400" alt="Proyecto 1">
-              <div class="overlay">
-                <p>Proyecto 1</p>
-                <div class="iconos-contenedor">
+            <div class="proyectos-recientes__proyecto">
+              <img class="proyectos-recientes__img" src="https://via.placeholder.com/600x400" alt="Proyecto 1">
+              <div class="proyectos-recientes__overlay">
+                <p class="proyectos-recientes__overlay-p">Proyecto 1</p>
+                <div class="proyectos-recientes__iconos-contenedor">
                   <a href="#" target="_blank" rel="noopener noreferrer">
-                    <i class="bi bi-github"></i>
+                    <i class="bi bi-github proyectos-recientes__iconos"></i>
                   </a>
                   <a href="#" target="_blank" rel="noopener noreferrer">
-                    <i class="bi bi-laptop"></i>
+                    <i class="bi bi-laptop proyectos-recientes__iconos"></i>
                   </a>
                 </div>
               </div>
@@ -126,16 +127,16 @@
           </div>
           <!-- Proyecto 2 -->
           <div class="col-12 col-md-6 col-lg-4">
-            <div class="proyecto">
-              <img src="https://via.placeholder.com/600x400" alt="Proyecto 2">
-              <div class="overlay">
-                <p>Proyecto 2</p>
-                <div class="iconos-contenedor">
+            <div class="proyectos-recientes__proyecto">
+              <img class="proyectos-recientes__img" src="https://via.placeholder.com/600x400" alt="Proyecto 2">
+              <div class="proyectos-recientes__overlay">
+                <p class="proyectos-recientes__overlay-p">Proyecto 2</p>
+                <div class="proyectos-recientes__iconos-contenedor">
                   <a href="#" target="_blank" rel="noopener noreferrer">
-                    <i class="bi bi-github"></i>
+                    <i class="bi bi-github proyectos-recientes__iconos"></i>
                   </a>
                   <a href="#" target="_blank" rel="noopener noreferrer">
-                    <i class="bi bi-laptop"></i>
+                    <i class="bi bi-laptop proyectos-recientes__iconos"></i>
                   </a>
                 </div>
               </div>
@@ -143,16 +144,16 @@
           </div>
           <!-- Proyecto 3 -->
           <div class="col-12 col-md-6 col-lg-4">
-            <div class="proyecto">
-              <img src="https://via.placeholder.com/600x400" alt="Proyecto 3">
-              <div class="overlay">
-                <p>Proyecto 3</p>
-                <div class="iconos-contenedor">
+            <div class="proyectos-recientes__proyecto">
+              <img class="proyectos-recientes__img" src="https://via.placeholder.com/600x400" alt="Proyecto 3">
+              <div class="proyectos-recientes__overlay">
+                <p class="proyectos-recientes__overlay-p">Proyecto 3</p>
+                <div class="proyectos-recientes__iconos-contenedor">
                   <a href="#" target="_blank" rel="noopener noreferrer">
-                    <i class="bi bi-github"></i>
+                    <i class="bi bi-github proyectos-recientes__iconos"></i>
                   </a>
                   <a href="#" target="_blank" rel="noopener noreferrer">
-                    <i class="bi bi-laptop"></i>
+                    <i class="bi bi-laptop proyectos-recientes__iconos"></i>
                   </a>
                 </div>
               </div>
@@ -160,16 +161,16 @@
           </div>
           <!-- Proyecto 4 -->
           <div class="col-12 col-md-6 col-lg-4">
-            <div class="proyecto">
-              <img src="https://via.placeholder.com/600x400" alt="Proyecto 4">
-              <div class="overlay">
-                <p>Proyecto 4</p>
-                <div class="iconos-contenedor">
+            <div class="proyectos-recientes__proyecto">
+              <img class="proyectos-recientes__img" src="https://via.placeholder.com/600x400" alt="Proyecto 4">
+              <div class="proyectos-recientes__overlay">
+                <p class="proyectos-recientes__overlay-p">Proyecto 4</p>
+                <div class="proyectos-recientes__iconos-contenedor">
                   <a href="#" target="_blank" rel="noopener noreferrer">
-                    <i class="bi bi-github"></i>
+                    <i class="bi bi-github proyectos-recientes__iconos"></i>
                   </a>
                   <a href="#" target="_blank" rel="noopener noreferrer">
-                    <i class="bi bi-laptop"></i>
+                    <i class="bi bi-laptop proyectos-recientes__iconos"></i>
                   </a>
                 </div>
               </div>
@@ -177,16 +178,16 @@
           </div>
           <!-- Proyecto 5 -->
           <div class="col-12 col-md-6 col-lg-4">
-            <div class="proyecto">
-              <img src="https://via.placeholder.com/600x400" alt="Proyecto 5">
-              <div class="overlay">
-                <p>Proyecto 5</p>
-                <div class="iconos-contenedor">
+            <div class="proyectos-recientes__proyecto">
+              <img class="proyectos-recientes__img" src="https://via.placeholder.com/600x400" alt="Proyecto 5">
+              <div class="proyectos-recientes__overlay">
+                <p class="proyectos-recientes__overlay-p">Proyecto 5</p>
+                <div class="proyectos-recientes__iconos-contenedor">
                   <a href="#" target="_blank" rel="noopener noreferrer">
-                    <i class="bi bi-github"></i>
+                    <i class="bi bi-github proyectos-recientes__iconos"></i>
                   </a>
                   <a href="#" target="_blank" rel="noopener noreferrer">
-                    <i class="bi bi-laptop"></i>
+                    <i class="bi bi-laptop proyectos-recientes__iconos"></i>
                   </a>
                 </div>
               </div>
@@ -194,16 +195,16 @@
           </div>
           <!-- Proyecto 6 -->
           <div class="col-12 col-md-6 col-lg-4">
-            <div class="proyecto">
-              <img src="https://via.placeholder.com/600x400" alt="Proyecto 6">
-              <div class="overlay">
-                <p>Proyecto 6</p>
-                <div class="iconos-contenedor">
+            <div class="proyectos-recientes__proyecto">
+              <img class="proyectos-recientes__img" src="https://via.placeholder.com/600x400" alt="Proyecto 6">
+              <div class="proyectos-recientes__overlay">
+                <p class="proyectos-recientes__overlay-p">Proyecto 6</p>
+                <div class="proyectos-recientes__iconos-contenedor">
                   <a href="#" target="_blank" rel="noopener noreferrer">
-                    <i class="bi bi-github"></i>
+                    <i class="bi bi-github proyectos-recientes__iconos"></i>
                   </a>
                   <a href="#" target="_blank" rel="noopener noreferrer">
-                    <i class="bi bi-laptop"></i>
+                    <i class="bi bi-laptop proyectos-recientes__iconos"></i>
                   </a>
                 </div>
               </div>
@@ -220,40 +221,40 @@
     </section>
 
     <!-- Testimonios -->
-    <section id="testimonios" class="testimonios seccion-clara">
-      <h2 class="seccion-titulo">Testimonios</h2>
-      <h3 class="seccion-descripcion">Estos son algunos testimonios de mis colegas</h3>
+    <section id="testimonios" class="testimonios">
+      <h2 class="testimonios__titulo">Testimonios</h2>
+      <h3 class="testimonios__descripcion">Estos son algunos testimonios de mis colegas</h3>
 
       <!-- Carrusel -->
-      <div id="testimonio-carrusel" class="carousel carousel-dark slide ">
+      <div id="testimonio-carrusel" class="testimonios__carrusel carousel carousel-dark slide">
         <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="container">
-              <img class="testimonio-imagen rounded-circle" src="/imagenes/Wandry_profile.jpg" alt="">
-              <p class="testimonio-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat doloribus eius odit. Illo soluta rerum saepe unde, aliquid consequatur.</p>
-              <div class="testimonio-info">
-                <p class="colega">Wandry Oscar Santana</p>
-                <p class="cargo">Desarrollador Web Full Stack</p>
+          <div class="testimonios__articulo carousel-item active">
+            <div class="testimonios__contenedor">
+              <img class="testimonios__imagen rounded-circle" src="/imagenes/Wandry_profile.jpg" alt="">
+              <p class="testimonios__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat doloribus eius odit. Illo soluta rerum saepe unde, aliquid consequatur.</p>
+              <div class="testimonios__info">
+                <p class="testimonios__colega">Wandry Oscar Santana</p>
+                <p class="testimonios__cargo">Desarrollador Web Full Stack</p>
               </div>
             </div>
           </div>
-          <div class="carousel-item">
-            <div class="container">
-              <img class="testimonio-imagen rounded-circle" src="https://via.placeholder.com/200x200" alt="">
-              <p class="testimonio-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat doloribus eius odit. Illo soluta rerum saepe unde, aliquid consequatur.</p>
-              <div class="testimonio-info">
-                <p class="colega">Jane Doe</p>
-                <p class="cargo">Desarrollador Web Full Stack</p>
+          <div class="testimonios__articulo carousel-item">
+            <div class="testimonios__contenedor">
+              <img class="testimonios__imagen rounded-circle" src="https://via.placeholder.com/200x200" alt="">
+              <p class="testimonios__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat doloribus eius odit. Illo soluta rerum saepe unde, aliquid consequatur.</p>
+              <div class="testimonios__info">
+                <p class="testimonios__colega">Jane Doe</p>
+                <p class="testimonios__cargo">Desarrollador Web Full Stack</p>
               </div>
             </div>
           </div>
-          <div class="carousel-item">
-            <div class="container">
-              <img class="testimonio-imagen rounded-circle" src="https://via.placeholder.com/200x200" alt="">
-              <p class="testimonio-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat doloribus eius odit. Illo soluta rerum saepe unde, aliquid consequatur.</p>
-              <div class="testimonio-info">
-                <p class="colega">Jane Doe</p>
-                <p class="cargo">Desarrollador Web Full Stack</p>
+          <div class="testimonios__articulo carousel-item">
+            <div class="testimonios__contenedor">
+              <img class="testimonios__imagen rounded-circle" src="https://via.placeholder.com/200x200" alt="">
+              <p class="testimonios__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat doloribus eius odit. Illo soluta rerum saepe unde, aliquid consequatur.</p>
+              <div class="testimonios__info">
+                <p class="testimonios__colega">Jane Doe</p>
+                <p class="testimonios__cargo">Desarrollador Web Full Stack</p>
               </div>
             </div>
           </div>
@@ -271,20 +272,20 @@
 
     <!-- Contacto -->
     <section id="contacto" class="contacto seccion-oscura">
-      <div class="container">
-        <div class="container text-center rectangulo d-flex justify-content-evenly">
-          <div class="row">
-            <div class="col-12 col-md-4 seccion-titulo">
+      <div class="contacto__contenedor container">
+        <div class="contacto__contenedor container text-center contacto__rectangulo d-flex justify-content-evenly">
+          <div class="contacto__row row">
+            <div class="col-12 col-md-4 contacto__titulo">
               ¡Hablemos!
             </div>
-            <div class="col-12 col-md-4 description">
+            <div class="col-12 col-md-4 contacto__description">
               Contáctame para iniciar tu proyecto de desarrollo web y haré que tu visión se vuelva realidad.
             </div>
             <div class="col-12 col-md-4">
               <a href="mailto:ydnarf13@hotmail.com">
-                <button type="button">
+                <button class="contacto__button" type="button">
                   Contacto
-                  <i class="bi bi-envelope-check-fill"></i>
+                  <i class="contacto__icono bi bi-envelope-check-fill"></i>
                 </button>
               </a>
             </div>
@@ -294,18 +295,18 @@
     </section>
 
     <!-- Pie de pagina -->
-    <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
-      <img class="footer-logo" src="imagenes/laptop_logo_blanco.png" alt="Logo del Portafolio">
-      <p class="footer-texto text-center">Aprendo y creo todos los días.<br>Creemos un proyecto juntos.</p>
-      <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
-        <a href="https://www.linkedin.com/in/frandyrn/" target="_blank" rel="noopener noreferrer">
-          <i class="bi bi-linkedin"></i>
+    <footer class=" footer d-flex flex-column align-items-center justify-content-center">
+      <img class="footer__logo" src="imagenes/laptop_logo_blanco.png" alt="Logo del Portafolio">
+      <p class="footer__texto text-center">Aprendo y creo todos los días.<br>Creemos un proyecto juntos.</p>
+      <div class="footer__iconos d-flex flex-wrap align-items-center justify-content-center">
+        <a class="footer__enlace" href="https://www.linkedin.com/in/frandyrn/" target="_blank" rel="noopener noreferrer">
+          <i class="footer__redes-sociales bi bi-linkedin"></i>
         </a>
-        <a href="https://github.com/ydnarf" target="_blank" rel="noopener noreferrer">
-          <i class="bi bi-github"></i>
+        <a class="footer__enlace" href="https://github.com/ydnarf" target="_blank" rel="noopener noreferrer">
+          <i class="footer__redes-sociales bi bi-github"></i>
         </a>
       </div>
-      <div class="derechos-de-autor">Creado por Frandy R. Nuñez (2023) &#169</div>
+      <div class="footer__copyright">Creado por Frandy R. Nuñez (2023) &#169</div>
     </footer>
 
     <!-- Bootstrap JavaScript -->

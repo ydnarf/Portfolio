@@ -1,0 +1,342 @@
+.navbar {
+  padding: 2rem;
+  background-color: #f5f6f7;
+}
+.navbar__navegar {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f6f7;
+  min-height: 450px;
+  text-align: center;
+}
+.hero__principal {
+  padding: 3rem;
+}
+.hero__img-perfil {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 20px;
+  object-fit: contain;
+}
+.hero__header2 {
+  font-size: 1.5rem;
+  color: #615151;
+}
+
+.sobre-mi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #1b1b32;
+  color: white;
+  height: 500px;
+  padding: 10px;
+}
+.sobre-mi__contenedor {
+  max-width: 600px;
+  text-align: center;
+}
+.sobre-mi__seccion-titulo {
+  font-size: 2rem;
+  padding: 15px 0;
+  font-family: "Rubik Dirt", cursive;
+}
+.sobre-mi__seccion-texto {
+  font-size: 1.2rem;
+}
+
+.experiencia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 40px 60px 40px;
+}
+.experiencia__columna {
+  padding: 20px;
+  border: 2px solid rgba(128, 128, 128, 0.3019607843);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: all 0.2s ease-in;
+}
+.experiencia__columna:hover {
+  color: white;
+  background-color: #1b1b32;
+}
+.experiencia__icono {
+  font-size: 2.5rem;
+  color: #7ade30;
+  background-color: #0a0a23;
+  padding: 8px 19px;
+  border-radius: 50%;
+}
+.experiencia__insignias-contenedor {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+.experiencia__insignia {
+  margin: 5px;
+}
+
+.proyectos-recientes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: black;
+  padding: 40px;
+}
+.proyectos-recientes__seccion-titulo {
+  font-size: 2rem;
+  padding: 15px 0;
+  font-family: "Rubik Dirt", cursive;
+  color: black;
+}
+.proyectos-recientes__seccion-descripcion {
+  font-size: 1.2rem;
+  color: #584e4e;
+}
+.proyectos-recientes__img {
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  display: block;
+  transition: all 0.2s ease;
+}
+.proyectos-recientes__contenedor {
+  padding-top: 60px;
+  margin-bottom: 40px;
+}
+.proyectos-recientes__overlay {
+  transition: all 0.2s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.proyectos-recientes__overlay-p {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.proyectos-recientes__proyecto {
+  position: relative;
+}
+.proyectos-recientes__proyecto:hover .proyectos-recientes__img {
+  opacity: 0.2;
+}
+.proyectos-recientes__proyecto:hover .proyectos-recientes__overlay {
+  opacity: 1;
+}
+.proyectos-recientes__iconos-contenedor {
+  display: flex;
+}
+.proyectos-recientes__iconos {
+  color: black;
+  font-size: 60px;
+  margin: 10px;
+}
+
+.testimonios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: black;
+  padding: 40px 40px 80px 40px;
+}
+.testimonios__titulo {
+  font-size: 2rem;
+  padding: 15px 0;
+  font-family: "Rubik Dirt", cursive;
+}
+.testimonios__descripcion {
+  font-size: 1.2rem;
+  color: #584e4e;
+}
+.testimonios__carrusel {
+  max-width: 800px;
+}
+.testimonios__articulo {
+  height: 500px;
+}
+.testimonios__contenedor {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.testimonios__imagen {
+  height: 150px;
+  width: 150px;
+  margin: 10px 10px 20px 10px;
+  object-fit: contain;
+}
+.testimonios__texto {
+  max-width: 70%;
+  font-size: 20px;
+  text-align: center;
+  font-family: "Share Tech Mono", monospace;
+}
+.testimonios__info {
+  font-weight: bold;
+  text-align: center;
+}
+.testimonios__colega {
+  font-size: 1.3rem;
+}
+.testimonios__cargo {
+  font-size: 0.9rem;
+  color: #656060;
+}
+
+.contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #1b1b32;
+  color: white;
+}
+.contacto__contenedor {
+  max-width: 1100px;
+  min-height: 200px;
+  padding: 20px;
+}
+.contacto__rectangulo {
+  margin-top: -5rem;
+  background-color: rgb(13, 110, 253);
+  border-radius: 10px;
+  box-shadow: 0px 1px 4px 1px white;
+}
+.contacto__row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.contacto__description {
+  font-size: 1.2rem;
+  color: #584e4e;
+  color: white;
+  font-size: 1.2rem;
+}
+.contacto__titulo {
+  font-size: 2rem;
+  padding: 15px 0;
+  font-family: "Rubik Dirt", cursive;
+}
+.contacto__button {
+  color: white;
+  font-weight: bold;
+  background-color: transparent;
+  border: 2px solid white;
+  padding: 1.25em 2em;
+  margin: 10px;
+  border-radius: 100px;
+  transition: all 0.2s ease-in-out;
+}
+.contacto__button:hover {
+  background-color: white;
+  color: black;
+}
+.contacto__button:hover .contacto__icono {
+  color: black;
+}
+.contacto__icono {
+  color: white;
+  font-size: 1.3rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.footer {
+  background-color: #1b1b32;
+  color: white;
+  min-height: 500px;
+}
+.footer__logo {
+  height: 80px;
+  width: 80px;
+  margin: 10px;
+}
+.footer__texto {
+  font-size: 1.5rem;
+  padding: 20px;
+  margin-bottom: 30px;
+  font-family: "Quicksand", sans-serif;
+}
+.footer__enlace {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  margin: 10px;
+  border: 2px solid white;
+  border-radius: 50%;
+  transition: all 0.2s ease-in;
+}
+.footer__redes-sociales {
+  color: white;
+  font-size: 1.5rem;
+  transition: all 0.2s ease-in;
+}
+.footer__enlace:hover {
+  background-color: white;
+}
+.footer__enlace:hover .footer__redes-sociales {
+  color: black;
+}
+.footer__copyright {
+  font-size: 15px;
+  color: #aeaeae;
+  padding: 20px;
+}
+
+/* Adaptable (Responsivo) */
+@media screen and (max-width: 480px) {
+  .proyectos-recientes__overlay-p {
+    font-size: 18px;
+  }
+  .proyectos-recientes__imagen {
+    font-size: 40px;
+  }
+  .testimonios__imagen {
+    height: 120px;
+    width: 120px;
+  }
+  .testimonios__texto {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .navbar-brand {
+    display: none;
+  }
+}
+@media screen and (min-width: 700px) {
+  .hero__img-inferior {
+    max-width: 600px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
