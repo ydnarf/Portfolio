@@ -145,7 +145,7 @@ export const experience = {
     {
       version: 'v0.9',
       tag: 'BETA',
-      period: '2019 — 2023',
+      period: '2017 — 2022',
       role: 'Ingeniería de Sistemas',
       place: 'Formación universitaria',
       notes:
