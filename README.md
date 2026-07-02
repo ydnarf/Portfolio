@@ -1,5 +1,7 @@
 # Portafolio — Frandy R. Nuñez
 
+**En vivo:** https://portfolio-xi-navy-50.vercel.app
+
 Portafolio personal de Full Stack Developer. Dirección estética **«TRAZA»**:
 placa de circuito a contraluz — carbón, cobre y pátina, con una traza que se
 dibuja con el scroll y conecta todas las secciones.
@@ -47,7 +49,8 @@ src/
 ## Pendiente de revisión humana
 
 - Reemplazar placeholders de experiencia y proyectos con datos reales
-- Agregar dominio: `og:url`, `og:image`, canonical y sitemap (ver
-  `public/robots.txt` e `index.html`)
+- `og:image` 1200×630 cuando haya captura (y cambiar `twitter:card` a
+  `summary_large_image`)
+- Cabecera Content-Security-Policy en el hosting
 - El email queda visible en texto plano (decisión deliberada; los bots de
   spam pueden cosecharlo)
