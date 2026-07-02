@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-# Sitemap: https://TU-DOMINIO/sitemap.xml  ← descomentar al tener dominio
+Sitemap: https://portfolio-xi-navy-50.vercel.app/sitemap.xml
