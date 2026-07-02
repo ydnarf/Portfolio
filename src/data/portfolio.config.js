@@ -90,7 +90,7 @@ export const projects = {
       demo: null, // ← https://luzestudio.onrender.com cuando el servicio se reactive en Render
       repo: 'https://github.com/ydnarf/landing-fotografia',
       image: '/previews/luzestudio.jpg',
-      alt: 'Hero de LuzEstudio: titular «Capturamos tus momentos más especiales» sobre fondo oscuro',
+      alt: 'Hero de LuzEstudio: titular «Luz Estudio» en serif editorial sobre fondo oscuro, junto a una foto de boda con ramo',
     },
     {
       code: 'MOD-02',
