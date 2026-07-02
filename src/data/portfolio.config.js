@@ -83,14 +83,14 @@ export const projects = {
   items: [
     {
       code: 'MOD-01',
-      name: 'Lumen',
+      name: 'LuzEstudio',
       problem:
-        'Landing para un estudio fotográfico que convierte visitas en reservas de sesión.',
-      stack: ['React', 'Node.js', 'Express', 'TailwindCSS'],
-      demo: null, // ← URL de la demo cuando exista
-      repo: null, // ← URL del repositorio
-      image: null,
-      alt: 'Captura de la landing del estudio fotográfico Lumen',
+        'Landing para un estudio fotográfico que convierte visitas en reservas de sesión: galería con filtros por categoría y formulario de contacto validado.',
+      stack: ['React', 'TypeScript', 'TailwindCSS', 'Node.js', 'Express'],
+      demo: null, // ← https://luzestudio.onrender.com cuando el servicio se reactive en Render
+      repo: 'https://github.com/ydnarf/landing-fotografia',
+      image: '/previews/luzestudio.jpg',
+      alt: 'Hero de LuzEstudio: titular «Capturamos tus momentos más especiales» sobre fondo oscuro',
     },
     {
       code: 'MOD-02',
