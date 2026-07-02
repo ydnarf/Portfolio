@@ -110,7 +110,7 @@ export const projects = {
         'Dashboard de métricas en tiempo real para tiendas online: ventas, stock y alertas en un solo panel, alimentado por WebSockets.',
       stack: ['React', 'TypeScript', 'Node.js', 'Express', 'WebSockets'],
       demo: null,
-      repo: null, // ← URL del repo cuando se publique en GitHub
+      repo: 'https://github.com/ydnarf/norte-dashboard',
       image: '/previews/norte.jpg',
       alt: 'Panel Norte: KPIs de ventas, gráfico de ingresos por minuto, alertas de stock y pedidos en vivo',
     },
