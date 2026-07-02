@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
+  body {
+    @apply bg-carbon font-sans text-hueso antialiased;
+  }
+
+  ::selection {
+    @apply bg-cobre text-carbon;
+  }
+
+  :focus-visible {
+    outline: 2px solid theme(colors.cobre.DEFAULT);
+    outline-offset: 3px;
+  }
+}
+
+@layer components {
+  /* Retícula tipo placa: visible solo alrededor del contenido del hero,
+     se desvanece hacia los bordes con una máscara radial. */
+  .pcb-grid {
+    background-image:
+      linear-gradient(to right, theme(colors.hueso / 4%) 1px, transparent 1px),
+      linear-gradient(to bottom, theme(colors.hueso / 4%) 1px, transparent 1px);
+    background-size: 56px 56px;
+    -webkit-mask-image: radial-gradient(
+      ellipse 85% 75% at 40% 45%,
+      black 25%,
+      transparent 78%
+    );
+    mask-image: radial-gradient(
+      ellipse 85% 75% at 40% 45%,
+      black 25%,
+      transparent 78%
+    );
+  }
+}

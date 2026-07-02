@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+# Sitemap: https://TU-DOMINIO/sitemap.xml  ← descomentar al tener dominio
