@@ -136,7 +136,7 @@ export const experience = {
     {
       version: 'v1.0',
       tag: 'RELEASE',
-      period: '2023 — 2024',
+      period: '2021 — 2024',
       role: 'Primeros productos en producción',
       place: 'Freelance',
       notes:
