@@ -94,14 +94,14 @@ export const projects = {
     },
     {
       code: 'MOD-02',
-      name: 'Butaca',
+      name: 'FanRangers',
       problem:
-        'Plataforma de streaming con catálogo, perfiles y reproducción, respaldada por PostgreSQL.',
-      stack: ['React', 'Node.js', 'PostgreSQL', 'Prisma', 'JWT'],
+        'Plataforma de streaming de contenido de dominio público y Creative Commons: catálogo, reproducción y panel de administración, con auth por JWT en cookie HttpOnly.',
+      stack: ['React', 'TypeScript', 'Node.js', 'Express', 'PostgreSQL', 'Prisma'],
       demo: null,
-      repo: null,
+      repo: 'https://github.com/ydnarf/FanRangers',
       image: null,
-      alt: 'Captura de la plataforma de streaming Butaca',
+      alt: 'Captura de la plataforma de streaming FanRangers',
     },
     {
       code: 'MOD-03',
