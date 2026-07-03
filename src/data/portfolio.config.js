@@ -100,8 +100,8 @@ export const projects = {
       stack: ['React', 'TypeScript', 'Node.js', 'Express', 'PostgreSQL', 'Prisma'],
       demo: null,
       repo: 'https://github.com/ydnarf/FanRangers',
-      image: null,
-      alt: 'Captura de la plataforma de streaming FanRangers',
+      image: '/previews/fanrangers.jpg',
+      alt: 'Home de FanRangers: hero de Mighty Morphin Temporada 1 con rangers rojos sobre fondo oscuro y botón «Ver ahora»',
     },
     {
       code: 'MOD-03',
