@@ -139,7 +139,7 @@ export const projects = {
         'Bot de Telegram que vigila el mercado por ti: motor de análisis en Python con datos macro en tiempo real (FRED), detector de regímenes de mercado y señales entregadas al chat sin intervención humana. Desplegado en Google Cloud.',
       stack: ['Python', 'Telegram API', 'FRED API', 'Google Cloud'],
       demo: null,
-      repo: null, // ← URL del repo cuando lo publiques
+      repo: 'https://github.com/ydnarf/vigia',
       image: null,
       preview: {
         type: 'telegram',
