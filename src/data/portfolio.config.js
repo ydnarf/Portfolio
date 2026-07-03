@@ -7,8 +7,9 @@
 export const identity = {
   name: 'Frandy R. Nuñez',
   logo: 'frandy', // marca corta en la barra de navegación
-  role: 'Full Stack Developer',
-  tagline: 'De la idea al deploy: el sistema completo, un solo responsable.',
+  role: 'Full Stack Developer — Web, AI & Automatización',
+  tagline:
+    'De la idea al deploy, un solo responsable: la web que usas y el sistema que trabaja solo.',
   status: 'Disponible para proyectos',
   email: 'ydnarf21@gmail.com',
 };
@@ -28,7 +29,7 @@ export const nav = {
 };
 
 export const hero = {
-  eyebrow: 'FULL STACK DEVELOPER',
+  eyebrow: 'FULL STACK — WEB · AI · AUTOMATIZACIÓN',
   ctaPrimary: { label: 'Ver proyectos', href: '#proyectos' },
   ctaSecondary: { label: 'Contacto', href: '#contacto' },
   scrollHint: 'seguir la traza',
@@ -39,13 +40,14 @@ export const about = {
   title: 'Sobre mí',
   bio: [
     'Ingeniero de sistemas. Construyo productos web completos: defino el esquema de datos, levanto la API y la llevo hasta una interfaz que alguien disfruta usar.',
+    'No todo tiene pantalla: también construyo sistemas que trabajan solos — bots, automatizaciones, integraciones con AI.',
     'Trabajo de punta a punta porque los productos no se rompen en las capas: se rompen en las costuras. Menos handoffs, menos sorpresas en producción.',
   ],
   // Ficha técnica al pie de la bio — edita valores, agrega o quita filas.
   datasheet: [
     { label: 'Formación', value: 'Ingeniería de Sistemas' },
     { label: 'Enfoque', value: 'De la idea al deploy' },
-    { label: 'Base', value: 'React · Node · PostgreSQL' },
+    { label: 'Base', value: 'React · Node · PostgreSQL · Python' },
   ],
 };
 
@@ -65,6 +67,17 @@ export const skills = {
       also: ['Prisma', 'APIs REST', 'JWT / Auth', 'WebSockets'],
     },
     {
+      label: 'AI & AUTOMATIZACIÓN',
+      core: ['Python', 'Anthropic API', 'Bots de Telegram'],
+      also: [
+        'Claude Code (workflows agénticos)',
+        'Structured outputs',
+        'Scraping',
+        'Pipelines y scheduling',
+        'Google Cloud',
+      ],
+    },
+    {
       label: 'TOOLS / DEVOPS',
       core: ['Git', 'Docker'],
       also: ['GitHub Actions', 'Linux', 'Vercel', 'Railway'],
@@ -80,6 +93,10 @@ export const projects = {
   //  - image: ruta a un screenshot (ej. '/previews/lumen.webp'). Con null se
   //    muestra el placeholder de serigrafía hasta que tengas captura real.
   //  - demo / repo: con null se muestra "en desarrollo" en lugar del link.
+  //  - category (opcional): rótulo junto al código, ej. 'AI & Automatización'.
+  //  - preview (opcional): para proyectos sin UI web (bots, servicios). Con
+  //    { type: 'telegram', ... } se dibuja un mockup del chat en lugar de
+  //    captura. Solo se usa si image es null; edita botName/header/rows/time.
   items: [
     {
       code: 'MOD-01',
@@ -113,6 +130,30 @@ export const projects = {
       repo: 'https://github.com/ydnarf/norte-dashboard',
       image: '/previews/norte.jpg',
       alt: 'Panel Norte: KPIs de ventas, gráfico de ingresos por minuto, alertas de stock y pedidos en vivo',
+    },
+    {
+      code: 'MOD-04',
+      name: 'Vigía',
+      category: 'AI & Automatización',
+      problem:
+        'Bot de Telegram que vigila el mercado por ti: motor de análisis en Python con datos macro en tiempo real (FRED), detector de regímenes de mercado y señales entregadas al chat sin intervención humana. Desplegado en Google Cloud.',
+      stack: ['Python', 'Telegram API', 'FRED API', 'Google Cloud'],
+      demo: null,
+      repo: null, // ← URL del repo cuando lo publiques
+      image: null,
+      preview: {
+        type: 'telegram',
+        botName: '@vigia_bot',
+        header: 'SEÑAL · RÉGIMEN RISK-OFF',
+        rows: [
+          { label: 'Activo', value: 'S&P 500 (ES)' },
+          { label: 'Dirección', value: 'Corto' },
+          { label: 'Gatillo', value: 'VIX > 24 · 10Y–2Y invertida' },
+          { label: 'Confianza', value: 'Alta' },
+        ],
+        time: '09:32',
+      },
+      alt: 'Chat de Telegram del bot Vigía: mensaje con una señal de régimen risk-off sobre el S&P 500, con dirección, gatillo y confianza',
     },
   ],
 };

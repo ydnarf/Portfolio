@@ -5,7 +5,7 @@ import SectionHeading from '../ui/SectionHeading';
 
 // Cada grupo se indenta un paso más que el anterior, como una traza
 // que baja en escalera por la placa.
-const OFFSETS = ['', 'lg:ml-[8%]', 'lg:ml-[16%]'];
+const OFFSETS = ['', 'lg:ml-[6%]', 'lg:ml-[12%]', 'lg:ml-[18%]'];
 
 export default function Skills() {
   const reveal = useReveal();
